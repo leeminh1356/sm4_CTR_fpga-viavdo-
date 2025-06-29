@@ -1,0 +1,24 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SM4_SBOX
+Compiling module xil_defaultlib.SM4_Trans_CT
+Compiling module xil_defaultlib.SM4_One_Round_EncDec
+Compiling module xil_defaultlib.SM4_EncDec
+Compiling module xil_defaultlib.SM4_Get_CK
+Compiling module xil_defaultlib.SM4_Trans_RK
+Compiling module xil_defaultlib.SM4_One_Round_KeyExp
+Compiling module xil_defaultlib.SM4_KeyExp
+Compiling module xil_defaultlib.SM4
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sim_1/new/tb.v,1750662874,verilog,,,,testbench,,,,,,,,
+C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sim_1/new/tb_giaima.v,1750704218,verilog,,,,tb_giaima,,,,,,,,
+C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v,1751088435,verilog,,C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sim_1/new/tb.v,,SM4;SM4_EncDec;SM4_Get_CK;SM4_KeyExp;SM4_One_Round_EncDec;SM4_One_Round_KeyExp;SM4_SBOX;SM4_Trans_CT;SM4_Trans_RK,,,,,,,,

@@ -1,0 +1,568 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jun 25 22:34:03 2025
+# Process ID: 20368
+# Current directory: C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.runs/synth_1
+# Command line: vivado.exe -log SM4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SM4.tcl
+# Log file: C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.runs/synth_1/SM4.vds
+# Journal file: C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.runs/synth_1\vivado.jou
+# Running On: leeminh, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 17013 MB
+#-----------------------------------------------------------
+source SM4.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.258 ; gain = 116.875
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/utils_1/imports/synth_1/SM4.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/utils_1/imports/synth_1/SM4.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top SM4 -part xc7a100tiftg256-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100ti'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1712
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'word_3' is used before its declaration [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:817]
+WARNING: [Synth 8-6901] identifier 'word_2' is used before its declaration [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:817]
+WARNING: [Synth 8-6901] identifier 'word_1' is used before its declaration [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:817]
+WARNING: [Synth 8-6901] identifier 'word_0' is used before its declaration [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:817]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1445.141 ; gain = 406.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SM4' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:4]
+INFO: [Synth 8-6157] synthesizing module 'SM4_EncDec' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:694]
+INFO: [Synth 8-6157] synthesizing module 'SM4_One_Round_EncDec' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:491]
+INFO: [Synth 8-6157] synthesizing module 'SM4_Trans_CT' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:430]
+INFO: [Synth 8-6157] synthesizing module 'SM4_SBOX' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'SM4_SBOX' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'SM4_Trans_CT' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:430]
+INFO: [Synth 8-6155] done synthesizing module 'SM4_One_Round_EncDec' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:491]
+INFO: [Synth 8-6155] done synthesizing module 'SM4_EncDec' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:694]
+INFO: [Synth 8-6157] synthesizing module 'SM4_KeyExp' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:508]
+INFO: [Synth 8-6157] synthesizing module 'SM4_Get_CK' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:365]
+INFO: [Synth 8-226] default block is never used [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:367]
+INFO: [Synth 8-6155] done synthesizing module 'SM4_Get_CK' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:365]
+INFO: [Synth 8-6157] synthesizing module 'SM4_One_Round_KeyExp' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:456]
+INFO: [Synth 8-6157] synthesizing module 'SM4_Trans_RK' [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:404]
+INFO: [Synth 8-6155] done synthesizing module 'SM4_Trans_RK' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:404]
+INFO: [Synth 8-6155] done synthesizing module 'SM4_One_Round_KeyExp' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:456]
+INFO: [Synth 8-6155] done synthesizing module 'SM4_KeyExp' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:508]
+INFO: [Synth 8-6155] done synthesizing module 'SM4' (0#1) [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:4]
+WARNING: [Synth 8-6014] Unused sequential element reg_enable_key_exp_reg was removed.  [C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.srcs/sources_1/new/sm4.v:593]
+WARNING: [Synth 8-7129] Port enc_dec in module SM4_KeyExp is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1540.586 ; gain = 501.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1540.586 ; gain = 501.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tiftg256-1L
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tiftg256-1L
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1540.586 ; gain = 501.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_reg' in module 'SM4_EncDec'
+INFO: [Synth 8-802] inferred FSM for state register 'current_reg' in module 'SM4_KeyExp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_reg' using encoding 'sequential' in module 'SM4_EncDec'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                               00
+                  iSTATE |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_reg' using encoding 'sequential' in module 'SM4_KeyExp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1540.586 ; gain = 501.953
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   5 Input     32 Bit         XORs := 32    
+	   2 Input     32 Bit         XORs := 36    
+	   4 Input     32 Bit         XORs := 34    
+	   3 Input     32 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 3     
+	               32 Bit    Registers := 33    
+	               23 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port EncDec in module SM4 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:03:16 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------------+-------------------------------+---------------+----------------+
+|Module Name          | RTL Object                    | Depth x Width | Implemented As | 
++---------------------+-------------------------------+---------------+----------------+
+|SM4_SBOX             | res_out                       | 256x8         | LUT            | 
+|SM4_Get_CK           | cki_out                       | 32x23         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s3/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s2/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s1/res_out              | 256x8         | LUT            | 
+|SM4_One_Round_EncDec | t_enc/s0/res_out              | 256x8         | LUT            | 
+|SM4                  | k_exp/get_ck/cki_out          | 32x23         | LUT            | 
+|SM4                  | k_exp/one_exp/t_rk/s3/res_out | 256x8         | LUT            | 
+|SM4                  | k_exp/one_exp/t_rk/s2/res_out | 256x8         | LUT            | 
+|SM4                  | k_exp/one_exp/t_rk/s1/res_out | 256x8         | LUT            | 
+|SM4                  | k_exp/one_exp/t_rk/s0/res_out | 256x8         | LUT            | 
++---------------------+-------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:56 ; elapsed = 00:03:21 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:00 ; elapsed = 00:03:25 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:06 ; elapsed = 00:03:31 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:06 ; elapsed = 00:03:31 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:07 ; elapsed = 00:03:32 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:08 ; elapsed = 00:03:33 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:33 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:08 ; elapsed = 00:03:33 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    32|
+|3     |LUT1   |     4|
+|4     |LUT2   |   477|
+|5     |LUT3   |   181|
+|6     |LUT4   |   882|
+|7     |LUT5   |   150|
+|8     |LUT6   |  6769|
+|9     |MUXF7  |  1008|
+|10    |MUXF8  |   152|
+|11    |FDCE   |   256|
+|12    |FDRE   |  1475|
+|13    |IBUF   |   389|
+|14    |OBUF   |   131|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+------------------------+------+
+|      |Instance     |Module                  |Cells |
++------+-------------+------------------------+------+
+|1     |top          |                        | 11907|
+|2     |  enc        |SM4_EncDec              |  3710|
+|3     |    round_00 |SM4_One_Round_EncDec    |   128|
+|4     |      t_enc  |SM4_Trans_CT_188        |    96|
+|5     |        s0   |SM4_SBOX_189            |    24|
+|6     |        s1   |SM4_SBOX_190            |    24|
+|7     |        s2   |SM4_SBOX_191            |    24|
+|8     |        s3   |SM4_SBOX_192            |    24|
+|9     |    round_01 |SM4_One_Round_EncDec_3  |   136|
+|10    |      t_enc  |SM4_Trans_CT_183        |    96|
+|11    |        s0   |SM4_SBOX_184            |    24|
+|12    |        s1   |SM4_SBOX_185            |    24|
+|13    |        s2   |SM4_SBOX_186            |    24|
+|14    |        s3   |SM4_SBOX_187            |    24|
+|15    |    round_02 |SM4_One_Round_EncDec_4  |   136|
+|16    |      t_enc  |SM4_Trans_CT_178        |    96|
+|17    |        s0   |SM4_SBOX_179            |    24|
+|18    |        s1   |SM4_SBOX_180            |    24|
+|19    |        s2   |SM4_SBOX_181            |    24|
+|20    |        s3   |SM4_SBOX_182            |    24|
+|21    |    round_03 |SM4_One_Round_EncDec_5  |   136|
+|22    |      t_enc  |SM4_Trans_CT_173        |    96|
+|23    |        s0   |SM4_SBOX_174            |    24|
+|24    |        s1   |SM4_SBOX_175            |    24|
+|25    |        s2   |SM4_SBOX_176            |    24|
+|26    |        s3   |SM4_SBOX_177            |    24|
+|27    |    round_04 |SM4_One_Round_EncDec_6  |   136|
+|28    |      t_enc  |SM4_Trans_CT_168        |    96|
+|29    |        s0   |SM4_SBOX_169            |    24|
+|30    |        s1   |SM4_SBOX_170            |    24|
+|31    |        s2   |SM4_SBOX_171            |    24|
+|32    |        s3   |SM4_SBOX_172            |    24|
+|33    |    round_05 |SM4_One_Round_EncDec_7  |   104|
+|34    |      t_enc  |SM4_Trans_CT_163        |    64|
+|35    |        s0   |SM4_SBOX_164            |    16|
+|36    |        s1   |SM4_SBOX_165            |    16|
+|37    |        s2   |SM4_SBOX_166            |    16|
+|38    |        s3   |SM4_SBOX_167            |    16|
+|39    |    round_06 |SM4_One_Round_EncDec_8  |    88|
+|40    |      t_enc  |SM4_Trans_CT_158        |    48|
+|41    |        s0   |SM4_SBOX_159            |    12|
+|42    |        s1   |SM4_SBOX_160            |    12|
+|43    |        s2   |SM4_SBOX_161            |    12|
+|44    |        s3   |SM4_SBOX_162            |    12|
+|45    |    round_07 |SM4_One_Round_EncDec_9  |   104|
+|46    |      t_enc  |SM4_Trans_CT_153        |    64|
+|47    |        s0   |SM4_SBOX_154            |    16|
+|48    |        s1   |SM4_SBOX_155            |    16|
+|49    |        s2   |SM4_SBOX_156            |    16|
+|50    |        s3   |SM4_SBOX_157            |    16|
+|51    |    round_08 |SM4_One_Round_EncDec_10 |    88|
+|52    |      t_enc  |SM4_Trans_CT_148        |    48|
+|53    |        s0   |SM4_SBOX_149            |    12|
+|54    |        s1   |SM4_SBOX_150            |    12|
+|55    |        s2   |SM4_SBOX_151            |    12|
+|56    |        s3   |SM4_SBOX_152            |    12|
+|57    |    round_09 |SM4_One_Round_EncDec_11 |   104|
+|58    |      t_enc  |SM4_Trans_CT_143        |    64|
+|59    |        s0   |SM4_SBOX_144            |    16|
+|60    |        s1   |SM4_SBOX_145            |    16|
+|61    |        s2   |SM4_SBOX_146            |    16|
+|62    |        s3   |SM4_SBOX_147            |    16|
+|63    |    round_10 |SM4_One_Round_EncDec_12 |    88|
+|64    |      t_enc  |SM4_Trans_CT_138        |    48|
+|65    |        s0   |SM4_SBOX_139            |    12|
+|66    |        s1   |SM4_SBOX_140            |    12|
+|67    |        s2   |SM4_SBOX_141            |    12|
+|68    |        s3   |SM4_SBOX_142            |    12|
+|69    |    round_11 |SM4_One_Round_EncDec_13 |   104|
+|70    |      t_enc  |SM4_Trans_CT_133        |    64|
+|71    |        s0   |SM4_SBOX_134            |    16|
+|72    |        s1   |SM4_SBOX_135            |    16|
+|73    |        s2   |SM4_SBOX_136            |    16|
+|74    |        s3   |SM4_SBOX_137            |    16|
+|75    |    round_12 |SM4_One_Round_EncDec_14 |    88|
+|76    |      t_enc  |SM4_Trans_CT_128        |    48|
+|77    |        s0   |SM4_SBOX_129            |    12|
+|78    |        s1   |SM4_SBOX_130            |    12|
+|79    |        s2   |SM4_SBOX_131            |    12|
+|80    |        s3   |SM4_SBOX_132            |    12|
+|81    |    round_13 |SM4_One_Round_EncDec_15 |   104|
+|82    |      t_enc  |SM4_Trans_CT_123        |    64|
+|83    |        s0   |SM4_SBOX_124            |    16|
+|84    |        s1   |SM4_SBOX_125            |    16|
+|85    |        s2   |SM4_SBOX_126            |    16|
+|86    |        s3   |SM4_SBOX_127            |    16|
+|87    |    round_14 |SM4_One_Round_EncDec_16 |    88|
+|88    |      t_enc  |SM4_Trans_CT_118        |    48|
+|89    |        s0   |SM4_SBOX_119            |    12|
+|90    |        s1   |SM4_SBOX_120            |    12|
+|91    |        s2   |SM4_SBOX_121            |    12|
+|92    |        s3   |SM4_SBOX_122            |    12|
+|93    |    round_15 |SM4_One_Round_EncDec_17 |   104|
+|94    |      t_enc  |SM4_Trans_CT_113        |    64|
+|95    |        s0   |SM4_SBOX_114            |    16|
+|96    |        s1   |SM4_SBOX_115            |    16|
+|97    |        s2   |SM4_SBOX_116            |    16|
+|98    |        s3   |SM4_SBOX_117            |    16|
+|99    |    round_16 |SM4_One_Round_EncDec_18 |    88|
+|100   |      t_enc  |SM4_Trans_CT_108        |    48|
+|101   |        s0   |SM4_SBOX_109            |    12|
+|102   |        s1   |SM4_SBOX_110            |    12|
+|103   |        s2   |SM4_SBOX_111            |    12|
+|104   |        s3   |SM4_SBOX_112            |    12|
+|105   |    round_17 |SM4_One_Round_EncDec_19 |   104|
+|106   |      t_enc  |SM4_Trans_CT_103        |    64|
+|107   |        s0   |SM4_SBOX_104            |    16|
+|108   |        s1   |SM4_SBOX_105            |    16|
+|109   |        s2   |SM4_SBOX_106            |    16|
+|110   |        s3   |SM4_SBOX_107            |    16|
+|111   |    round_18 |SM4_One_Round_EncDec_20 |    88|
+|112   |      t_enc  |SM4_Trans_CT_98         |    48|
+|113   |        s0   |SM4_SBOX_99             |    12|
+|114   |        s1   |SM4_SBOX_100            |    12|
+|115   |        s2   |SM4_SBOX_101            |    12|
+|116   |        s3   |SM4_SBOX_102            |    12|
+|117   |    round_19 |SM4_One_Round_EncDec_21 |   104|
+|118   |      t_enc  |SM4_Trans_CT_93         |    64|
+|119   |        s0   |SM4_SBOX_94             |    16|
+|120   |        s1   |SM4_SBOX_95             |    16|
+|121   |        s2   |SM4_SBOX_96             |    16|
+|122   |        s3   |SM4_SBOX_97             |    16|
+|123   |    round_20 |SM4_One_Round_EncDec_22 |    88|
+|124   |      t_enc  |SM4_Trans_CT_88         |    48|
+|125   |        s0   |SM4_SBOX_89             |    12|
+|126   |        s1   |SM4_SBOX_90             |    12|
+|127   |        s2   |SM4_SBOX_91             |    12|
+|128   |        s3   |SM4_SBOX_92             |    12|
+|129   |    round_21 |SM4_One_Round_EncDec_23 |   104|
+|130   |      t_enc  |SM4_Trans_CT_83         |    64|
+|131   |        s0   |SM4_SBOX_84             |    16|
+|132   |        s1   |SM4_SBOX_85             |    16|
+|133   |        s2   |SM4_SBOX_86             |    16|
+|134   |        s3   |SM4_SBOX_87             |    16|
+|135   |    round_22 |SM4_One_Round_EncDec_24 |    88|
+|136   |      t_enc  |SM4_Trans_CT_78         |    48|
+|137   |        s0   |SM4_SBOX_79             |    12|
+|138   |        s1   |SM4_SBOX_80             |    12|
+|139   |        s2   |SM4_SBOX_81             |    12|
+|140   |        s3   |SM4_SBOX_82             |    12|
+|141   |    round_23 |SM4_One_Round_EncDec_25 |   104|
+|142   |      t_enc  |SM4_Trans_CT_73         |    64|
+|143   |        s0   |SM4_SBOX_74             |    16|
+|144   |        s1   |SM4_SBOX_75             |    16|
+|145   |        s2   |SM4_SBOX_76             |    16|
+|146   |        s3   |SM4_SBOX_77             |    16|
+|147   |    round_24 |SM4_One_Round_EncDec_26 |    88|
+|148   |      t_enc  |SM4_Trans_CT_68         |    48|
+|149   |        s0   |SM4_SBOX_69             |    12|
+|150   |        s1   |SM4_SBOX_70             |    12|
+|151   |        s2   |SM4_SBOX_71             |    12|
+|152   |        s3   |SM4_SBOX_72             |    12|
+|153   |    round_25 |SM4_One_Round_EncDec_27 |   104|
+|154   |      t_enc  |SM4_Trans_CT_63         |    64|
+|155   |        s0   |SM4_SBOX_64             |    16|
+|156   |        s1   |SM4_SBOX_65             |    16|
+|157   |        s2   |SM4_SBOX_66             |    16|
+|158   |        s3   |SM4_SBOX_67             |    16|
+|159   |    round_26 |SM4_One_Round_EncDec_28 |    88|
+|160   |      t_enc  |SM4_Trans_CT_58         |    48|
+|161   |        s0   |SM4_SBOX_59             |    12|
+|162   |        s1   |SM4_SBOX_60             |    12|
+|163   |        s2   |SM4_SBOX_61             |    12|
+|164   |        s3   |SM4_SBOX_62             |    12|
+|165   |    round_27 |SM4_One_Round_EncDec_29 |   104|
+|166   |      t_enc  |SM4_Trans_CT_53         |    64|
+|167   |        s0   |SM4_SBOX_54             |    16|
+|168   |        s1   |SM4_SBOX_55             |    16|
+|169   |        s2   |SM4_SBOX_56             |    16|
+|170   |        s3   |SM4_SBOX_57             |    16|
+|171   |    round_28 |SM4_One_Round_EncDec_30 |    88|
+|172   |      t_enc  |SM4_Trans_CT_48         |    48|
+|173   |        s0   |SM4_SBOX_49             |    12|
+|174   |        s1   |SM4_SBOX_50             |    12|
+|175   |        s2   |SM4_SBOX_51             |    12|
+|176   |        s3   |SM4_SBOX_52             |    12|
+|177   |    round_29 |SM4_One_Round_EncDec_31 |   104|
+|178   |      t_enc  |SM4_Trans_CT_43         |    64|
+|179   |        s0   |SM4_SBOX_44             |    16|
+|180   |        s1   |SM4_SBOX_45             |    16|
+|181   |        s2   |SM4_SBOX_46             |    16|
+|182   |        s3   |SM4_SBOX_47             |    16|
+|183   |    round_30 |SM4_One_Round_EncDec_32 |   104|
+|184   |      t_enc  |SM4_Trans_CT_38         |    64|
+|185   |        s0   |SM4_SBOX_39             |    16|
+|186   |        s1   |SM4_SBOX_40             |    16|
+|187   |        s2   |SM4_SBOX_41             |    16|
+|188   |        s3   |SM4_SBOX_42             |    16|
+|189   |    round_31 |SM4_One_Round_EncDec_33 |    72|
+|190   |      t_enc  |SM4_Trans_CT            |    32|
+|191   |        s0   |SM4_SBOX_34             |     8|
+|192   |        s1   |SM4_SBOX_35             |     8|
+|193   |        s2   |SM4_SBOX_36             |     8|
+|194   |        s3   |SM4_SBOX_37             |     8|
+|195   |  k_exp      |SM4_KeyExp              |  7419|
+|196   |    get_ck   |SM4_Get_CK              |   245|
+|197   |    one_exp  |SM4_One_Round_KeyExp    |    96|
+|198   |      t_rk   |SM4_Trans_RK            |    96|
+|199   |        s0   |SM4_SBOX                |    24|
+|200   |        s1   |SM4_SBOX_0              |    24|
+|201   |        s2   |SM4_SBOX_1              |    24|
+|202   |        s3   |SM4_SBOX_2              |    24|
++------+-------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:08 ; elapsed = 00:03:33 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:08 ; elapsed = 00:03:33 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+Synthesis Optimization Complete : Time (s): cpu = 00:03:08 ; elapsed = 00:03:33 . Memory (MB): peak = 2074.316 ; gain = 1035.684
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.260 . Memory (MB): peak = 2086.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1192 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2089.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: bc2f66b3
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:13 ; elapsed = 00:03:39 . Memory (MB): peak = 2089.672 ; gain = 1061.273
+INFO: [Common 17-1381] The checkpoint 'C:/Users/leemi/sm4_using_CTR/sm4_using_CTR.runs/synth_1/SM4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SM4_utilization_synth.rpt -pb SM4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 25 22:37:55 2025...
